@@ -28,76 +28,66 @@ public class MainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        advance_btn = new javax.swing.JButton();
+        Intermediate_btn = new javax.swing.JButton();
+        Basic_btn = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1920, 1080));
+        setPreferredSize(new java.awt.Dimension(1920, 1080));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
-        jLabel1.setText("Chose Your English Language Proficiency Level");
-
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jButton1.setText("Advance");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        advance_btn.setBackground(new java.awt.Color(255, 255, 255));
+        advance_btn.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        advance_btn.setText("Advance");
+        advance_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                advance_btnActionPerformed(evt);
             }
         });
+        getContentPane().add(advance_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 240, 369, 336));
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jButton2.setText("Intermediate");
-
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jButton3.setText("Basic");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        Intermediate_btn.setBackground(new java.awt.Color(255, 255, 255));
+        Intermediate_btn.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        Intermediate_btn.setText("Intermediate");
+        Intermediate_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                Intermediate_btnActionPerformed(evt);
             }
         });
+        getContentPane().add(Intermediate_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 240, 369, 336));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(139, 139, 139)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(72, 72, 72)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(61, 61, 61))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35))
-        );
+        Basic_btn.setBackground(new java.awt.Color(255, 255, 255));
+        Basic_btn.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        Basic_btn.setText("Basic");
+        Basic_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Basic_btnActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Basic_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 369, 336));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\University\\Hack\\Project\\EnglishManagementSystem\\src\\main\\java\\Images\\MainPane.png")); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, -5, 1920, 1080));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        new DashBoard().setVisible(true);
+    private void Basic_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Basic_btnActionPerformed
+        new DashBoardOne().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_Basic_btnActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void advance_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_advance_btnActionPerformed
+        new DashBoardThree().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_advance_btnActionPerformed
+
+    private void Intermediate_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Intermediate_btnActionPerformed
+        new DashBoardTwo().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Intermediate_btnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -135,9 +125,9 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton Basic_btn;
+    private javax.swing.JButton Intermediate_btn;
+    private javax.swing.JButton advance_btn;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
