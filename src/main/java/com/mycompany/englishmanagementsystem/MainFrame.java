@@ -5,6 +5,14 @@
  */
 package com.mycompany.englishmanagementsystem;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author manul
@@ -14,9 +22,11 @@ public class MainFrame extends javax.swing.JFrame {
     /**
      * Creates new form MainFrame
      */
+    public int level_id;
     public MainFrame() {
         initComponents();
         setLocationRelativeTo(null);
+       
     }
 
     /**
@@ -75,18 +85,78 @@ public class MainFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Basic_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Basic_btnActionPerformed
-        new DashBoardOne().setVisible(true);
-        this.dispose();
+         OutputStream output = null;
+        try {
+            new DashBoardOne().setVisible(true);
+            output = new FileOutputStream("settings/LevelProperty.properties");
+            Properties prop = new Properties();
+            // set the properties value
+            prop.setProperty("level_id", "1");
+            // save properties to project root folder
+            prop.store(output, null);
+            System.out.println(prop);
+            this.dispose();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                output.close();
+            } catch (IOException ex) {
+                Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }//GEN-LAST:event_Basic_btnActionPerformed
 
     private void advance_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_advance_btnActionPerformed
-        new DashBoardThree().setVisible(true);
-        this.dispose();
+         OutputStream output = null;
+        try {
+            new DashBoardThree().setVisible(true);
+            output = new FileOutputStream("settings/LevelProperty.properties");
+            Properties prop = new Properties();
+            // set the properties value
+            prop.setProperty("level_id", "3");
+            // save properties to project root folder
+            prop.store(output, null);
+            System.out.println(prop);
+            this.dispose();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                output.close();
+            } catch (IOException ex) {
+                Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }//GEN-LAST:event_advance_btnActionPerformed
 
     private void Intermediate_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Intermediate_btnActionPerformed
-        new DashBoardTwo().setVisible(true);
-        this.dispose();
+         OutputStream output = null;
+        try {
+            new DashBoardTwo().setVisible(true);
+            output = new FileOutputStream("settings/LevelProperty.properties");
+            Properties prop = new Properties();
+            // set the properties value
+            prop.setProperty("level_id", "2");
+            // save properties to project root folder
+            prop.store(output, null);
+            System.out.println(prop);
+            this.dispose();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                output.close();
+            } catch (IOException ex) {
+                Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }//GEN-LAST:event_Intermediate_btnActionPerformed
 
     /**

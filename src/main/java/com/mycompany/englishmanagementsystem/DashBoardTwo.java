@@ -5,6 +5,8 @@
  */
 package com.mycompany.englishmanagementsystem;
 
+import DB.SimpleSoundCapture;
+
 /**
  *
  * @author manul
@@ -40,9 +42,36 @@ public class DashBoardTwo extends javax.swing.JFrame {
         intructionOne_btn = new javax.swing.JButton();
         tutorialOne_btn = new javax.swing.JButton();
         testOne_btn = new javax.swing.JButton();
+        backTwo_btn = new javax.swing.JButton();
         TaskOneMainPanel = new javax.swing.JPanel();
         TestOne = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        next_btn = new javax.swing.JButton();
+        qCardLayOut = new javax.swing.JPanel();
+        QPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        jCheckBox3 = new javax.swing.JCheckBox();
+        jCheckBox4 = new javax.swing.JCheckBox();
+        QPanel2 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jCheckBox5 = new javax.swing.JCheckBox();
+        jCheckBox6 = new javax.swing.JCheckBox();
+        jCheckBox7 = new javax.swing.JCheckBox();
+        jCheckBox8 = new javax.swing.JCheckBox();
         TutorialONe = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
         InstructionOne = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         TaskTwoPanel = new javax.swing.JPanel();
@@ -52,7 +81,33 @@ public class DashBoardTwo extends javax.swing.JFrame {
         testTwo_btn = new javax.swing.JButton();
         TaskTwoMainPanel = new javax.swing.JPanel();
         TestTwo = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        next_btn1 = new javax.swing.JButton();
+        QTaskTwoCardLayOut = new javax.swing.JPanel();
+        qPanel2 = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jCheckBox9 = new javax.swing.JCheckBox();
+        jCheckBox10 = new javax.swing.JCheckBox();
+        jCheckBox11 = new javax.swing.JCheckBox();
+        jCheckBox12 = new javax.swing.JCheckBox();
+        qPanel3 = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jCheckBox13 = new javax.swing.JCheckBox();
+        jCheckBox14 = new javax.swing.JCheckBox();
+        jCheckBox15 = new javax.swing.JCheckBox();
+        jCheckBox16 = new javax.swing.JCheckBox();
         TutorialTwo = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
         InstructionTwo = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         TaskThreePanel = new javax.swing.JPanel();
@@ -62,7 +117,17 @@ public class DashBoardTwo extends javax.swing.JFrame {
         testThree_btn = new javax.swing.JButton();
         TaskThreeMainPanel = new javax.swing.JPanel();
         TestThree = new javax.swing.JPanel();
+        start_btn = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea4 = new javax.swing.JTextArea();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
         TutorialThree = new javax.swing.JPanel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTextArea5 = new javax.swing.JTextArea();
         InstructionThree = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
 
@@ -169,16 +234,27 @@ public class DashBoardTwo extends javax.swing.JFrame {
             }
         });
 
+        backTwo_btn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        backTwo_btn.setText("Back");
+        backTwo_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backTwo_btnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout ButtonPanelTaskOneLayout = new javax.swing.GroupLayout(ButtonPanelTaskOne);
         ButtonPanelTaskOne.setLayout(ButtonPanelTaskOneLayout);
         ButtonPanelTaskOneLayout.setHorizontalGroup(
             ButtonPanelTaskOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ButtonPanelTaskOneLayout.createSequentialGroup()
+            .addGroup(ButtonPanelTaskOneLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(ButtonPanelTaskOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(testOne_btn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(tutorialOne_btn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(intructionOne_btn, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE))
+                .addGroup(ButtonPanelTaskOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(testOne_btn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(tutorialOne_btn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(intructionOne_btn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
+                    .addGroup(ButtonPanelTaskOneLayout.createSequentialGroup()
+                        .addComponent(backTwo_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         ButtonPanelTaskOneLayout.setVerticalGroup(
@@ -190,7 +266,9 @@ public class DashBoardTwo extends javax.swing.JFrame {
                 .addComponent(tutorialOne_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38)
                 .addComponent(testOne_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(685, 685, 685))
+                .addGap(582, 582, 582)
+                .addComponent(backTwo_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65))
         );
 
         TaskOnePanel.add(ButtonPanelTaskOne, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 2, -1, 940));
@@ -198,28 +276,120 @@ public class DashBoardTwo extends javax.swing.JFrame {
         TaskOneMainPanel.setBackground(new java.awt.Color(255, 255, 255));
         TaskOneMainPanel.setLayout(new java.awt.CardLayout());
 
-        javax.swing.GroupLayout TestOneLayout = new javax.swing.GroupLayout(TestOne);
-        TestOne.setLayout(TestOneLayout);
-        TestOneLayout.setHorizontalGroup(
-            TestOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1620, Short.MAX_VALUE)
-        );
-        TestOneLayout.setVerticalGroup(
-            TestOneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 970, Short.MAX_VALUE)
-        );
+        TestOne.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jTextArea1.setRows(5);
+        jTextArea1.setText("\n      Aristotle considered human nature, habit and reason to be equally important forces to be cultivated in education, the ultimate aim of which should be to produce good and virtuous citizens. \n      He proposed that teachers lead their students systematically, and that repetition be used as a key tool to develop good habits,unlike Socrates' emphasis on questioning his listeners to bring out their own ideas. \n      He emphasized the balancing of the theoretical and practical aspects of subjects taught,among which he explicitly mentions reading, writing, mathematics,\n      music, physical education,literature, history, and a wide range of sciences, as well as play, which he also considered important.\n \n     During the Medieval period, the idea of Perennialism was first formulated by St. \n     Thomas Aquinas in his work \"De Magistro\".\n     Perennialism holds that one should teach those things deemed to be of everlasting importance to all people everywhere, \n     namely principles and reasoning, not just facts (which are apt to change over time), \n     and that one should teach first about people, not machines or techniques. It was originally religious in nature, \n     and it was only much later that a theory of secular perennialism developed.\n\n     During the Renaissance, the French skeptic Michel de Montaigne (1533 - 1592) was one of the first to critically look at education. \n     Unusually for his time, Montaigne was willing to question the conventional wisdom of the period,\n     calling into question the whole edifice of the educational system, and the implicit assumption that university-educated philosophers were necessarily \n     wiser than uneducated farm workers, for example.");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        TestOne.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 27, 1545, 497));
+
+        next_btn.setText("Next");
+        next_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                next_btnActionPerformed(evt);
+            }
+        });
+        TestOne.add(next_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 870, 157, 47));
+
+        qCardLayOut.setLayout(new java.awt.CardLayout());
+
+        QPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel2.setText("1.It refers to something which is of ceaseless importance");
+        QPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 108, 876, 54));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel3.setText("Q1. What do you understand by the term ‘Perennialism’, in the context of the given comprehension passage?");
+        QPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 37, 1089, 54));
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel7.setText("2. It refers to something which is quite unnecessary ");
+        QPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 168, 876, 54));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel8.setText("3. It refers to something which is abstract and theoretical");
+        QPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 228, 876, 54));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel9.setText("4.It refers to something which existed in the past and no longer exists now");
+        QPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 288, 876, 54));
+        QPanel1.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 125, -1, -1));
+        QPanel1.add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 244, -1, -1));
+
+        jCheckBox3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox3ActionPerformed(evt);
+            }
+        });
+        QPanel1.add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 188, -1, -1));
+        QPanel1.add(jCheckBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 303, -1, -1));
+
+        qCardLayOut.add(QPanel1, "card3");
+
+        QPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel10.setText("1.It refers to something which is of ceaseless importance");
+        QPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 108, 876, 54));
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel11.setText("Q2. What do you understand by the term ‘Perennialism’, in the context of the given comprehension passage?");
+        QPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 37, 1089, 54));
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel12.setText("2. It refers to something which is quite unnecessary ");
+        QPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 168, 876, 54));
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel13.setText("3. It refers to something which is abstract and theoretical");
+        QPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 222, 876, 54));
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel14.setText("4.It refers to something which existed in the past and no longer exists now");
+        QPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 282, 876, 54));
+        QPanel2.add(jCheckBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 125, -1, -1));
+        QPanel2.add(jCheckBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 244, -1, -1));
+
+        jCheckBox7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox7ActionPerformed(evt);
+            }
+        });
+        QPanel2.add(jCheckBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 188, -1, -1));
+        QPanel2.add(jCheckBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 297, -1, -1));
+
+        qCardLayOut.add(QPanel2, "card2");
+
+        TestOne.add(qCardLayOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 560, 1170, 370));
 
         TaskOneMainPanel.add(TestOne, "card4");
+
+        jTextArea2.setEditable(false);
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("MS PGothic", 0, 24)); // NOI18N
+        jTextArea2.setRows(5);
+        jTextArea2.setText("\n    Noun\n    \n    A noun is the word that refers to a person, thing or abstract idea. A noun can tell you who\n    or what.\n\tThere are several didifferent types of noun:- \n\n\t There are common nouns such as dog, car, chair etc. \n\t Nouns that refer to things which can be counted (can be singular or plural) are\n\tcountable nouns.\n \t Nouns that refer to some groups of countable nouns, substances, feelings and\n\t\ttypes of activity (can only be singular) are uncountable nouns. \n\t Nouns that refer to a group of people or things are collective nouns. \n\t Nouns that refer to people, organizations or places are proper nouns, only proper\n\t\tnouns are capitalized. \n\t Nouns that are made up of two or more words are called compound nouns. \n\t Nouns that are formed from a verb by adding -ing are called gerunds\n\n    Verb\n\tThe verb is perhaps the most important part of the sentence. A verb or compound verb\n\tasserts something about the subject of the sentence and express actions, events, or states\n\tof being. The verb or compound verb is the critical element of the predicate of a sentence.\n\tIn each of the following sentences, the verb or compound verb is highlighted:\n\tTransitive Verbs followed by Adverbs\n\tback up: support I will back up your story.\n\tbail out: rescue If you run into difficulties, who will bail you out?\n\tbreak in: make something new fit\n\tfor use I broke in my new hiking boots.\n\tbreathe in: inhale We breathed in the fresh air.\n\tbreathe out: exhale I breathed out a sigh of relief.");
+        jScrollPane2.setViewportView(jTextArea2);
 
         javax.swing.GroupLayout TutorialONeLayout = new javax.swing.GroupLayout(TutorialONe);
         TutorialONe.setLayout(TutorialONeLayout);
         TutorialONeLayout.setHorizontalGroup(
             TutorialONeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1620, Short.MAX_VALUE)
+            .addGroup(TutorialONeLayout.createSequentialGroup()
+                .addGap(69, 69, 69)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 1510, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(41, Short.MAX_VALUE))
         );
         TutorialONeLayout.setVerticalGroup(
             TutorialONeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 970, Short.MAX_VALUE)
+            .addGroup(TutorialONeLayout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         TaskOneMainPanel.add(TutorialONe, "card3");
@@ -305,28 +475,288 @@ public class DashBoardTwo extends javax.swing.JFrame {
         TaskTwoMainPanel.setBackground(new java.awt.Color(255, 255, 255));
         TaskTwoMainPanel.setLayout(new java.awt.CardLayout());
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton1.setText("Play");
+
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton2.setText("Pause");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        next_btn1.setText("Next");
+        next_btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                next_btn1ActionPerformed(evt);
+            }
+        });
+
+        QTaskTwoCardLayOut.setLayout(new java.awt.CardLayout());
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel15.setText("Q1.What is the difference between the approaches of Socrates and Aristotle?");
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel16.setText("1)Aristotle felt the need for repetition to develop good habits in students ");
+
+        jLabel17.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel17.setText("2)Aristotle felt the need for rote-learning; Socrates emphasized on dialogic learning");
+
+        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel18.setText("3)There was no difference");
+
+        jLabel19.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel19.setText("4)Aristotle emphasized on the importance of paying attention to human nature");
+
+        jCheckBox9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox9ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox10ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox11ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox12ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout qPanel2Layout = new javax.swing.GroupLayout(qPanel2);
+        qPanel2.setLayout(qPanel2Layout);
+        qPanel2Layout.setHorizontalGroup(
+            qPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(qPanel2Layout.createSequentialGroup()
+                .addGroup(qPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(qPanel2Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 876, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(qPanel2Layout.createSequentialGroup()
+                        .addGap(102, 102, 102)
+                        .addGroup(qPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCheckBox12)
+                            .addComponent(jCheckBox11)
+                            .addComponent(jCheckBox10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jCheckBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29)
+                        .addGroup(qPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 792, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 792, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 903, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 879, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(251, Short.MAX_VALUE))
+        );
+        qPanel2Layout.setVerticalGroup(
+            qPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(qPanel2Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(qPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(qPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, qPanel2Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(jCheckBox12)
+                        .addGap(36, 36, 36)))
+                .addGroup(qPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(qPanel2Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(jCheckBox11)))
+                .addGap(30, 30, 30)
+                .addGroup(qPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(qPanel2Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jCheckBox10)))
+                .addGroup(qPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(qPanel2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(qPanel2Layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(jCheckBox9)))
+                .addContainerGap(91, Short.MAX_VALUE))
+        );
+
+        QTaskTwoCardLayOut.add(qPanel2, "card2");
+
+        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel20.setText("Q2.Why do educationists consider philosophy a ‘weak and woolly’ field?");
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel21.setText("1)It is not practically applicable");
+
+        jLabel22.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel22.setText("2)Its theoretical concepts are easily understood ");
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel23.setText("3)It is irrelevant for education");
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel24.setText("4)None of the above");
+
+        jCheckBox13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox13ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox14ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox15ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox16ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout qPanel3Layout = new javax.swing.GroupLayout(qPanel3);
+        qPanel3.setLayout(qPanel3Layout);
+        qPanel3Layout.setHorizontalGroup(
+            qPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(qPanel3Layout.createSequentialGroup()
+                .addGroup(qPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(qPanel3Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 876, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(qPanel3Layout.createSequentialGroup()
+                        .addGap(102, 102, 102)
+                        .addGroup(qPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCheckBox16)
+                            .addComponent(jCheckBox15)
+                            .addComponent(jCheckBox14, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jCheckBox13, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29)
+                        .addGroup(qPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 792, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 792, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 903, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 879, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(251, Short.MAX_VALUE))
+        );
+        qPanel3Layout.setVerticalGroup(
+            qPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(qPanel3Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(qPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(qPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, qPanel3Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(jCheckBox16)
+                        .addGap(36, 36, 36)))
+                .addGroup(qPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(qPanel3Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(jCheckBox15)))
+                .addGap(30, 30, 30)
+                .addGroup(qPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(qPanel3Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jCheckBox14)))
+                .addGroup(qPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(qPanel3Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(qPanel3Layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(jCheckBox13)))
+                .addContainerGap(91, Short.MAX_VALUE))
+        );
+
+        QTaskTwoCardLayOut.add(qPanel3, "card3");
+
         javax.swing.GroupLayout TestTwoLayout = new javax.swing.GroupLayout(TestTwo);
         TestTwo.setLayout(TestTwoLayout);
         TestTwoLayout.setHorizontalGroup(
             TestTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1620, Short.MAX_VALUE)
+            .addGroup(TestTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(TestTwoLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGroup(TestTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(TestTwoLayout.createSequentialGroup()
+                            .addGap(961, 961, 961)
+                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(TestTwoLayout.createSequentialGroup()
+                            .addComponent(QTaskTwoCardLayOut, javax.swing.GroupLayout.PREFERRED_SIZE, 1310, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(78, 78, 78)
+                            .addComponent(next_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         TestTwoLayout.setVerticalGroup(
             TestTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 970, Short.MAX_VALUE)
+            .addGroup(TestTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(TestTwoLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGroup(TestTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(173, 173, 173)
+                    .addGroup(TestTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(QTaskTwoCardLayOut, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(TestTwoLayout.createSequentialGroup()
+                            .addGap(444, 444, 444)
+                            .addComponent(next_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         TaskTwoMainPanel.add(TestTwo, "card4");
+
+        jTextArea3.setEditable(false);
+        jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("MS PGothic", 0, 24)); // NOI18N
+        jTextArea3.setRows(5);
+        jTextArea3.setText("\n    Noun\n    \n    A noun is the word that refers to a person, thing or abstract idea. A noun can tell you who\n    or what.\n\tThere are several didifferent types of noun:- \n\n\t There are common nouns such as dog, car, chair etc. \n\t Nouns that refer to things which can be counted (can be singular or plural) are\n\tcountable nouns.\n \t Nouns that refer to some groups of countable nouns, substances, feelings and\n\t\ttypes of activity (can only be singular) are uncountable nouns. \n\t Nouns that refer to a group of people or things are collective nouns. \n\t Nouns that refer to people, organizations or places are proper nouns, only proper\n\t\tnouns are capitalized. \n\t Nouns that are made up of two or more words are called compound nouns. \n\t Nouns that are formed from a verb by adding -ing are called gerunds\n\n    Verb\n\tThe verb is perhaps the most important part of the sentence. A verb or compound verb\n\tasserts something about the subject of the sentence and express actions, events, or states\n\tof being. The verb or compound verb is the critical element of the predicate of a sentence.\n\tIn each of the following sentences, the verb or compound verb is highlighted:\n\tTransitive Verbs followed by Adverbs\n\tback up: support I will back up your story.\n\tbail out: rescue If you run into difficulties, who will bail you out?\n\tbreak in: make something new fit\n\tfor use I broke in my new hiking boots.\n\tbreathe in: inhale We breathed in the fresh air.\n\tbreathe out: exhale I breathed out a sigh of relief.");
+        jScrollPane3.setViewportView(jTextArea3);
 
         javax.swing.GroupLayout TutorialTwoLayout = new javax.swing.GroupLayout(TutorialTwo);
         TutorialTwo.setLayout(TutorialTwoLayout);
         TutorialTwoLayout.setHorizontalGroup(
             TutorialTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1620, Short.MAX_VALUE)
+            .addGroup(TutorialTwoLayout.createSequentialGroup()
+                .addGap(55, 55, 55)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 1510, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(55, Short.MAX_VALUE))
         );
         TutorialTwoLayout.setVerticalGroup(
             TutorialTwoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 970, Short.MAX_VALUE)
+            .addGroup(TutorialTwoLayout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
         TaskTwoMainPanel.add(TutorialTwo, "card3");
@@ -412,29 +842,52 @@ public class DashBoardTwo extends javax.swing.JFrame {
         TaskThreeMainPanel.setBackground(new java.awt.Color(255, 255, 255));
         TaskThreeMainPanel.setLayout(new java.awt.CardLayout());
 
-        javax.swing.GroupLayout TestThreeLayout = new javax.swing.GroupLayout(TestThree);
-        TestThree.setLayout(TestThreeLayout);
-        TestThreeLayout.setHorizontalGroup(
-            TestThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1620, Short.MAX_VALUE)
-        );
-        TestThreeLayout.setVerticalGroup(
-            TestThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 970, Short.MAX_VALUE)
-        );
+        TestThree.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        start_btn.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        start_btn.setText("Start");
+        start_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                start_btnActionPerformed(evt);
+            }
+        });
+        TestThree.add(start_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 160, 128, -1));
+
+        jButton4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton4.setText("Submit");
+        TestThree.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1400, 160, 128, 40));
+
+        jTextArea4.setColumns(20);
+        jTextArea4.setRows(5);
+        jScrollPane4.setViewportView(jTextArea4);
+
+        TestThree.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, 1420, 410));
+
+        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        TestThree.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(1330, 840, 110, 40));
+
+        jLabel28.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel28.setText("Score :");
+        TestThree.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 840, 110, 40));
+
+        jLabel29.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        TestThree.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 100, 30));
+
+        jLabel30.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel30.setText("Result :");
+        TestThree.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 320, 100, 30));
 
         TaskThreeMainPanel.add(TestThree, "card4");
 
-        javax.swing.GroupLayout TutorialThreeLayout = new javax.swing.GroupLayout(TutorialThree);
-        TutorialThree.setLayout(TutorialThreeLayout);
-        TutorialThreeLayout.setHorizontalGroup(
-            TutorialThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1620, Short.MAX_VALUE)
-        );
-        TutorialThreeLayout.setVerticalGroup(
-            TutorialThreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 970, Short.MAX_VALUE)
-        );
+        TutorialThree.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextArea5.setColumns(20);
+        jTextArea5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jTextArea5.setRows(5);
+        jTextArea5.setText(" tips on speaking English fluently and confidently\n\n\n1. Don’t be afraid to make mistakes\nYour goal is to deliver a message, not speak perfect English,\n with the right grammar and vocabulary. Even native English speakers make mistakes!\n\n2. Practise, practise, Practice\n   Practice makes perfect.Constantly look for opportunities to test out your spoken English.  \n   Busuu's Conversations feature, for instance, provides an easy way to speak English and get feedback from with native speakers around the world.\n\n3. Listen\n   The more you hear, the easier it will be for you to speak better English. You’ll start speaking more fluently and confidently in conversations, \n   learning how to give your opinions in English with new expressions and idioms.\n\n4. Celebrate success\n   Every time you talk to someone in English is an achievement.  \n   Every single interaction you have, no matter how small, will help you improve your skills over time. Be proud of your progress. \n   \n   These first four tips help provide the best way to start speaking English with ease. \n   The following three steps will help take your English speaking skills to the next level..\n\n5. Think in English\n   Go from speaking good English to great English by thinking in the language.\n   You’ll find it difficult at first, \n   but after some time you’ll learn how to switch between speaking English and your first language.");
+        jScrollPane5.setViewportView(jTextArea5);
+
+        TutorialThree.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 1530, 900));
 
         TaskThreeMainPanel.add(TutorialThree, "card3");
 
@@ -514,6 +967,12 @@ public class DashBoardTwo extends javax.swing.JFrame {
         TaskOneMainPanel.revalidate();
 
         TaskOneMainPanel.add(TestOne);
+        
+        qCardLayOut.removeAll();
+        qCardLayOut.repaint();
+        qCardLayOut.revalidate();
+
+        qCardLayOut.add(QPanel1);
     }//GEN-LAST:event_testOne_btnActionPerformed
 
     private void intructionOne_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_intructionOne_btnActionPerformed
@@ -533,28 +992,131 @@ public class DashBoardTwo extends javax.swing.JFrame {
     }//GEN-LAST:event_tutorialOne_btnActionPerformed
 
     private void intructionTwo_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_intructionTwo_btnActionPerformed
-        // TODO add your handling code here:
+        
+        TaskTwoMainPanel.removeAll();
+        TaskTwoMainPanel.repaint();
+        TaskTwoMainPanel.revalidate();
+
+        TaskTwoMainPanel.add(InstructionTwo);
     }//GEN-LAST:event_intructionTwo_btnActionPerformed
 
     private void tutorialTwo_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tutorialTwo_btnActionPerformed
-        // TODO add your handling code here:
+         TaskTwoMainPanel.removeAll();
+        TaskTwoMainPanel.repaint();
+        TaskTwoMainPanel.revalidate();
+
+        TaskTwoMainPanel.add(TutorialTwo);
     }//GEN-LAST:event_tutorialTwo_btnActionPerformed
 
     private void testTwo_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_testTwo_btnActionPerformed
-        // TODO add your handling code here:
+         
+        TaskTwoMainPanel.removeAll();
+        TaskTwoMainPanel.repaint();
+        TaskTwoMainPanel.revalidate();
+
+        TaskTwoMainPanel.add(TestTwo);
+        
+        QTaskTwoCardLayOut.removeAll();
+        QTaskTwoCardLayOut.repaint();
+        QTaskTwoCardLayOut.revalidate();
+
+        QTaskTwoCardLayOut.add(qPanel2);
     }//GEN-LAST:event_testTwo_btnActionPerformed
 
     private void intructionThree_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_intructionThree_btnActionPerformed
-        // TODO add your handling code here:
+        TaskThreeMainPanel.removeAll();
+        TaskThreeMainPanel.repaint();
+        TaskThreeMainPanel.revalidate();
+
+        TaskThreeMainPanel.add(InstructionThree);
     }//GEN-LAST:event_intructionThree_btnActionPerformed
 
     private void tutorialThree_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tutorialThree_btnActionPerformed
-        // TODO add your handling code here:
+        TaskThreeMainPanel.removeAll();
+        TaskThreeMainPanel.repaint();
+        TaskThreeMainPanel.revalidate();
+
+        TaskThreeMainPanel.add(TutorialThree);
     }//GEN-LAST:event_tutorialThree_btnActionPerformed
 
     private void testThree_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_testThree_btnActionPerformed
-        // TODO add your handling code here:
+        TaskThreeMainPanel.removeAll();
+        TaskThreeMainPanel.repaint();
+        TaskThreeMainPanel.revalidate();
+
+        TaskThreeMainPanel.add(TestThree);
     }//GEN-LAST:event_testThree_btnActionPerformed
+
+    private void jCheckBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox3ActionPerformed
+
+    private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox7ActionPerformed
+
+    private void next_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_next_btnActionPerformed
+        qCardLayOut.removeAll();
+        qCardLayOut.repaint();
+        qCardLayOut.revalidate();
+
+        qCardLayOut.add(QPanel2);
+       
+    }//GEN-LAST:event_next_btnActionPerformed
+
+    private void backTwo_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backTwo_btnActionPerformed
+        new MainFrame().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_backTwo_btnActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void next_btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_next_btn1ActionPerformed
+        QTaskTwoCardLayOut.removeAll();
+        QTaskTwoCardLayOut.repaint();
+        QTaskTwoCardLayOut.revalidate();
+        QTaskTwoCardLayOut.add(qPanel3);
+    }//GEN-LAST:event_next_btn1ActionPerformed
+
+    private void jCheckBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox9ActionPerformed
+
+    private void jCheckBox10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox10ActionPerformed
+
+    private void jCheckBox11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox11ActionPerformed
+
+    private void jCheckBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox12ActionPerformed
+
+    private void jCheckBox13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox13ActionPerformed
+
+    private void jCheckBox14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox14ActionPerformed
+
+    private void jCheckBox15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox15ActionPerformed
+
+    private void jCheckBox16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox16ActionPerformed
+
+    private void start_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_start_btnActionPerformed
+        String []s = {""};
+        SimpleSoundCapture simpleSoundCapture = new SimpleSoundCapture();
+        simpleSoundCapture.main(s);
+    }//GEN-LAST:event_start_btnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -604,6 +1166,9 @@ public class DashBoardTwo extends javax.swing.JFrame {
     private javax.swing.JPanel InstructionThree;
     private javax.swing.JPanel InstructionTwo;
     private javax.swing.JPanel MainPanel;
+    private javax.swing.JPanel QPanel1;
+    private javax.swing.JPanel QPanel2;
+    private javax.swing.JPanel QTaskTwoCardLayOut;
     private javax.swing.JPanel TaskOneMainPanel;
     private javax.swing.JPanel TaskOnePanel;
     private javax.swing.JPanel TaskThreeMainPanel;
@@ -616,13 +1181,73 @@ public class DashBoardTwo extends javax.swing.JFrame {
     private javax.swing.JPanel TutorialONe;
     private javax.swing.JPanel TutorialThree;
     private javax.swing.JPanel TutorialTwo;
+    private javax.swing.JButton backTwo_btn;
     private javax.swing.JButton intructionOne_btn;
     private javax.swing.JButton intructionThree_btn;
     private javax.swing.JButton intructionTwo_btn;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox10;
+    private javax.swing.JCheckBox jCheckBox11;
+    private javax.swing.JCheckBox jCheckBox12;
+    private javax.swing.JCheckBox jCheckBox13;
+    private javax.swing.JCheckBox jCheckBox14;
+    private javax.swing.JCheckBox jCheckBox15;
+    private javax.swing.JCheckBox jCheckBox16;
+    private javax.swing.JCheckBox jCheckBox2;
+    private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.JCheckBox jCheckBox4;
+    private javax.swing.JCheckBox jCheckBox5;
+    private javax.swing.JCheckBox jCheckBox6;
+    private javax.swing.JCheckBox jCheckBox7;
+    private javax.swing.JCheckBox jCheckBox8;
+    private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextArea jTextArea5;
+    private javax.swing.JButton next_btn;
+    private javax.swing.JButton next_btn1;
+    private javax.swing.JPanel qCardLayOut;
+    private javax.swing.JPanel qPanel2;
+    private javax.swing.JPanel qPanel3;
+    private javax.swing.JButton start_btn;
     private javax.swing.JButton taskOne_btn;
     private javax.swing.JButton taskThree_btn;
     private javax.swing.JButton taskTwo_btn;

@@ -18,7 +18,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,4,56,0,0,7,-128"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,4,33,0,0,7,-128"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
@@ -214,12 +214,16 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
+                          <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="testOne_btn" max="32767" attributes="0"/>
-                                  <Component id="tutorialOne_btn" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="testOne_btn" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="tutorialOne_btn" alignment="1" max="32767" attributes="0"/>
                                   <Component id="intructionOne_btn" alignment="1" pref="242" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="backTwo_btn" min="-2" pref="225" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -234,7 +238,9 @@
                               <Component id="tutorialOne_btn" min="-2" pref="56" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                               <Component id="testOne_btn" min="-2" pref="58" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="685" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="582" max="-2" attributes="0"/>
+                              <Component id="backTwo_btn" min="-2" pref="38" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -273,6 +279,17 @@
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="testOne_btnActionPerformed"/>
                       </Events>
                     </Component>
+                    <Component class="javax.swing.JButton" name="backTwo_btn">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="18" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Back"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backTwo_btnActionPerformed"/>
+                      </Events>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="TaskOneMainPanel">
@@ -296,18 +313,277 @@
                         </Constraint>
                       </Constraints>
 
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="1620" max="32767" attributes="0"/>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="970" max="32767" attributes="0"/>
-                          </Group>
-                        </DimensionLayout>
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                        <Property name="useNullLayout" type="boolean" value="false"/>
                       </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="26" y="27" width="1545" height="497"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTextArea" name="jTextArea1">
+                              <Properties>
+                                <Property name="columns" type="int" value="20"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Times New Roman" size="24" style="0"/>
+                                </Property>
+                                <Property name="rows" type="int" value="5"/>
+                                <Property name="text" type="java.lang.String" value="&#xa;      Aristotle considered human nature, habit and reason to be equally important forces to be cultivated in education, the ultimate aim of which should be to produce good and virtuous citizens. &#xa;      He proposed that teachers lead their students systematically, and that repetition be used as a key tool to develop good habits,unlike Socrates&apos; emphasis on questioning his listeners to bring out their own ideas. &#xa;      He emphasized the balancing of the theoretical and practical aspects of subjects taught,among which he explicitly mentions reading, writing, mathematics,&#xa;      music, physical education,literature, history, and a wide range of sciences, as well as play, which he also considered important.&#xa; &#xa;     During the Medieval period, the idea of Perennialism was first formulated by St. &#xa;     Thomas Aquinas in his work &quot;De Magistro&quot;.&#xa;     Perennialism holds that one should teach those things deemed to be of everlasting importance to all people everywhere, &#xa;     namely principles and reasoning, not just facts (which are apt to change over time), &#xa;     and that one should teach first about people, not machines or techniques. It was originally religious in nature, &#xa;     and it was only much later that a theory of secular perennialism developed.&#xa;&#xa;     During the Renaissance, the French skeptic Michel de Montaigne (1533 - 1592) was one of the first to critically look at education. &#xa;     Unusually for his time, Montaigne was willing to question the conventional wisdom of the period,&#xa;     calling into question the whole edifice of the educational system, and the implicit assumption that university-educated philosophers were necessarily &#xa;     wiser than uneducated farm workers, for example."/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Component class="javax.swing.JButton" name="next_btn">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Next"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="next_btnActionPerformed"/>
+                          </Events>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="1420" y="870" width="157" height="47"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Container class="javax.swing.JPanel" name="qCardLayOut">
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="30" y="560" width="1170" height="370"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
+                          <SubComponents>
+                            <Container class="javax.swing.JPanel" name="QPanel1">
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                                  <CardConstraints cardName="card3"/>
+                                </Constraint>
+                              </Constraints>
+
+                              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                                <Property name="useNullLayout" type="boolean" value="false"/>
+                              </Layout>
+                              <SubComponents>
+                                <Component class="javax.swing.JLabel" name="jLabel2">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="18" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="1.It refers to something which is of ceaseless importance"/>
+                                  </Properties>
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="136" y="108" width="876" height="54"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel3">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="18" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="Q1. What do you understand by the term &#x2018;Perennialism&#x2019;, in the context of the given comprehension passage?"/>
+                                  </Properties>
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="78" y="37" width="1089" height="54"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel7">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="18" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="2. It refers to something which is quite unnecessary "/>
+                                  </Properties>
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="136" y="168" width="876" height="54"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel8">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="18" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="3. It refers to something which is abstract and theoretical"/>
+                                  </Properties>
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="136" y="228" width="876" height="54"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel9">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="18" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="4.It refers to something which existed in the past and no longer exists now"/>
+                                  </Properties>
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="136" y="288" width="876" height="54"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="93" y="125" width="-1" height="-1"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox2">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="93" y="244" width="-1" height="-1"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox3">
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox3ActionPerformed"/>
+                                  </Events>
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="93" y="188" width="-1" height="-1"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox4">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="93" y="303" width="-1" height="-1"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                              </SubComponents>
+                            </Container>
+                            <Container class="javax.swing.JPanel" name="QPanel2">
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                                  <CardConstraints cardName="card2"/>
+                                </Constraint>
+                              </Constraints>
+
+                              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                                <Property name="useNullLayout" type="boolean" value="false"/>
+                              </Layout>
+                              <SubComponents>
+                                <Component class="javax.swing.JLabel" name="jLabel10">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="18" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="1.It refers to something which is of ceaseless importance"/>
+                                  </Properties>
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="136" y="108" width="876" height="54"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel11">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="18" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="Q2. What do you understand by the term &#x2018;Perennialism&#x2019;, in the context of the given comprehension passage?"/>
+                                  </Properties>
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="58" y="37" width="1089" height="54"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel12">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="18" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="2. It refers to something which is quite unnecessary "/>
+                                  </Properties>
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="136" y="168" width="876" height="54"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel13">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="18" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="3. It refers to something which is abstract and theoretical"/>
+                                  </Properties>
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="136" y="222" width="876" height="54"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel14">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="18" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="4.It refers to something which existed in the past and no longer exists now"/>
+                                  </Properties>
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="136" y="282" width="876" height="54"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox5">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="93" y="125" width="-1" height="-1"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox6">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="93" y="244" width="-1" height="-1"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox7">
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox7ActionPerformed"/>
+                                  </Events>
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="93" y="188" width="-1" height="-1"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox8">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                                      <AbsoluteConstraints x="93" y="297" width="-1" height="-1"/>
+                                    </Constraint>
+                                  </Constraints>
+                                </Component>
+                              </SubComponents>
+                            </Container>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="TutorialONe">
                       <Constraints>
@@ -319,15 +595,45 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="1620" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane2" min="-2" pref="1510" max="-2" attributes="0"/>
+                                  <EmptySpace pref="41" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="970" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane2" min="-2" pref="887" max="-2" attributes="0"/>
+                                  <EmptySpace pref="37" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTextArea" name="jTextArea2">
+                              <Properties>
+                                <Property name="editable" type="boolean" value="false"/>
+                                <Property name="columns" type="int" value="20"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="MS PGothic" size="24" style="0"/>
+                                </Property>
+                                <Property name="rows" type="int" value="5"/>
+                                <Property name="text" type="java.lang.String" value="&#xa;    Noun&#xa;    &#xa;    A noun is the word that refers to a person, thing or abstract idea. A noun can tell you who&#xa;    or what.&#xa;&#x9;There are several didifferent types of noun:- &#xa;&#xa;&#x9;&#xf0b7; There are common nouns such as dog, car, chair etc. &#xa;&#x9;&#xf0b7; Nouns that refer to things which can be counted (can be singular or plural) are&#xa;&#x9;countable nouns.&#xa; &#x9;&#xf0b7; Nouns that refer to some groups of countable nouns, substances, feelings and&#xa;&#x9;&#x9;types of activity (can only be singular) are uncountable nouns. &#xa;&#x9;&#xf0b7; Nouns that refer to a group of people or things are collective nouns. &#xa;&#x9;&#xf0b7; Nouns that refer to people, organizations or places are proper nouns, only proper&#xa;&#x9;&#x9;nouns are capitalized. &#xa;&#x9;&#xf0b7; Nouns that are made up of two or more words are called compound nouns. &#xa;&#x9;&#xf0b7; Nouns that are formed from a verb by adding -ing are called gerunds&#xa;&#xa;    Verb&#xa;&#x9;The verb is perhaps the most important part of the sentence. A verb or compound verb&#xa;&#x9;asserts something about the subject of the sentence and express actions, events, or states&#xa;&#x9;of being. The verb or compound verb is the critical element of the predicate of a sentence.&#xa;&#x9;In each of the following sentences, the verb or compound verb is highlighted:&#xa;&#x9;Transitive Verbs followed by Adverbs&#xa;&#x9;back up: support I will back up your story.&#xa;&#x9;bail out: rescue If you run into difficulties, who will bail you out?&#xa;&#x9;break in: make something new fit&#xa;&#x9;for use I broke in my new hiking boots.&#xa;&#x9;breathe in: inhale We breathed in the fresh air.&#xa;&#x9;breathe out: exhale I breathed out a sigh of relief."/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="InstructionOne">
                       <Properties>
@@ -494,14 +800,380 @@
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <EmptySpace min="0" pref="1620" max="32767" attributes="0"/>
+                              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="961" pref="961" max="-2" attributes="0"/>
+                                              <Component id="jButton2" min="-2" pref="265" max="-2" attributes="0"/>
+                                              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                                              <Component id="jButton1" min="-2" pref="265" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="QTaskTwoCardLayOut" min="-2" pref="1310" max="-2" attributes="0"/>
+                                              <EmptySpace min="78" pref="78" max="-2" attributes="0"/>
+                                              <Component id="next_btn1" min="-2" pref="141" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <EmptySpace min="0" pref="970" max="32767" attributes="0"/>
+                              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jButton2" min="-2" pref="45" max="-2" attributes="0"/>
+                                          <Component id="jButton1" min="-2" pref="45" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="173" pref="173" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="QTaskTwoCardLayOut" min="-2" pref="490" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="444" pref="444" max="-2" attributes="0"/>
+                                              <Component id="next_btn1" min="-2" pref="45" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
+                      <SubComponents>
+                        <Component class="javax.swing.JButton" name="jButton1">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="24" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Play"/>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="jButton2">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="24" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Pause"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="next_btn1">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Next"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="next_btn1ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Container class="javax.swing.JPanel" name="QTaskTwoCardLayOut">
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
+                          <SubComponents>
+                            <Container class="javax.swing.JPanel" name="qPanel2">
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                                  <CardConstraints cardName="card2"/>
+                                </Constraint>
+                              </Constraints>
+
+                              <Layout>
+                                <DimensionLayout dim="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                                  <Component id="jLabel15" min="-2" pref="876" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jCheckBox12" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jCheckBox11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jCheckBox10" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                                      <Component id="jCheckBox9" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jLabel16" alignment="0" min="-2" pref="792" max="-2" attributes="0"/>
+                                                      <Component id="jLabel18" alignment="0" min="-2" pref="792" max="-2" attributes="0"/>
+                                                      <Component id="jLabel17" alignment="0" min="-2" pref="903" max="-2" attributes="0"/>
+                                                      <Component id="jLabel19" alignment="0" min="-2" pref="879" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace pref="251" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                </DimensionLayout>
+                                <DimensionLayout dim="1">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                          <Component id="jLabel15" min="-2" pref="45" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="jLabel16" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                                                  <Component id="jCheckBox12" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jLabel17" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                                                  <Component id="jCheckBox11" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jLabel18" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                                  <Component id="jCheckBox10" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel19" min="-2" pref="61" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                                  <Component id="jCheckBox9" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace pref="91" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                </DimensionLayout>
+                              </Layout>
+                              <SubComponents>
+                                <Component class="javax.swing.JLabel" name="jLabel15">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="24" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="Q1.What is the difference between the approaches of Socrates and Aristotle?"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel16">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="24" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="1)Aristotle felt the need for repetition to develop good habits in students "/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel17">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="24" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="2)Aristotle felt the need for rote-learning; Socrates emphasized on dialogic learning"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel18">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="24" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="3)There was no difference"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel19">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="24" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="4)Aristotle emphasized on the importance of paying attention to human nature"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox9">
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox9ActionPerformed"/>
+                                  </Events>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox10">
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox10ActionPerformed"/>
+                                  </Events>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox11">
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox11ActionPerformed"/>
+                                  </Events>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox12">
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox12ActionPerformed"/>
+                                  </Events>
+                                </Component>
+                              </SubComponents>
+                            </Container>
+                            <Container class="javax.swing.JPanel" name="qPanel3">
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                                  <CardConstraints cardName="card3"/>
+                                </Constraint>
+                              </Constraints>
+
+                              <Layout>
+                                <DimensionLayout dim="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                                  <Component id="jLabel20" min="-2" pref="876" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jCheckBox16" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jCheckBox15" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jCheckBox14" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                                      <Component id="jCheckBox13" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jLabel21" alignment="0" min="-2" pref="792" max="-2" attributes="0"/>
+                                                      <Component id="jLabel23" alignment="0" min="-2" pref="792" max="-2" attributes="0"/>
+                                                      <Component id="jLabel22" alignment="0" min="-2" pref="903" max="-2" attributes="0"/>
+                                                      <Component id="jLabel24" alignment="0" min="-2" pref="879" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace pref="251" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                </DimensionLayout>
+                                <DimensionLayout dim="1">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                          <Component id="jLabel20" min="-2" pref="45" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="jLabel21" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                                                  <Component id="jCheckBox16" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jLabel22" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                                                  <Component id="jCheckBox15" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jLabel23" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                                  <Component id="jCheckBox14" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel24" min="-2" pref="61" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                                  <Component id="jCheckBox13" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace pref="91" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                </DimensionLayout>
+                              </Layout>
+                              <SubComponents>
+                                <Component class="javax.swing.JLabel" name="jLabel20">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="24" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="Q2.Why do educationists consider philosophy a &#x2018;weak and woolly&#x2019; field?"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel21">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="24" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="1)It is not practically applicable"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel22">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="24" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="2)Its theoretical concepts are easily understood "/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel23">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="24" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="3)It is irrelevant for education"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel24">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="24" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="4)None of the above"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox13">
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox13ActionPerformed"/>
+                                  </Events>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox14">
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox14ActionPerformed"/>
+                                  </Events>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox15">
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox15ActionPerformed"/>
+                                  </Events>
+                                </Component>
+                                <Component class="javax.swing.JCheckBox" name="jCheckBox16">
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox16ActionPerformed"/>
+                                  </Events>
+                                </Component>
+                              </SubComponents>
+                            </Container>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="TutorialTwo">
                       <Constraints>
@@ -513,15 +1185,45 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="1620" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane3" min="-2" pref="1510" max="-2" attributes="0"/>
+                                  <EmptySpace pref="55" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="970" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane3" min="-2" pref="887" max="-2" attributes="0"/>
+                                  <EmptySpace pref="42" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTextArea" name="jTextArea3">
+                              <Properties>
+                                <Property name="editable" type="boolean" value="false"/>
+                                <Property name="columns" type="int" value="20"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="MS PGothic" size="24" style="0"/>
+                                </Property>
+                                <Property name="rows" type="int" value="5"/>
+                                <Property name="text" type="java.lang.String" value="&#xa;    Noun&#xa;    &#xa;    A noun is the word that refers to a person, thing or abstract idea. A noun can tell you who&#xa;    or what.&#xa;&#x9;There are several didifferent types of noun:- &#xa;&#xa;&#x9;&#xf0b7; There are common nouns such as dog, car, chair etc. &#xa;&#x9;&#xf0b7; Nouns that refer to things which can be counted (can be singular or plural) are&#xa;&#x9;countable nouns.&#xa; &#x9;&#xf0b7; Nouns that refer to some groups of countable nouns, substances, feelings and&#xa;&#x9;&#x9;types of activity (can only be singular) are uncountable nouns. &#xa;&#x9;&#xf0b7; Nouns that refer to a group of people or things are collective nouns. &#xa;&#x9;&#xf0b7; Nouns that refer to people, organizations or places are proper nouns, only proper&#xa;&#x9;&#x9;nouns are capitalized. &#xa;&#x9;&#xf0b7; Nouns that are made up of two or more words are called compound nouns. &#xa;&#x9;&#xf0b7; Nouns that are formed from a verb by adding -ing are called gerunds&#xa;&#xa;    Verb&#xa;&#x9;The verb is perhaps the most important part of the sentence. A verb or compound verb&#xa;&#x9;asserts something about the subject of the sentence and express actions, events, or states&#xa;&#x9;of being. The verb or compound verb is the critical element of the predicate of a sentence.&#xa;&#x9;In each of the following sentences, the verb or compound verb is highlighted:&#xa;&#x9;Transitive Verbs followed by Adverbs&#xa;&#x9;back up: support I will back up your story.&#xa;&#x9;bail out: rescue If you run into difficulties, who will bail you out?&#xa;&#x9;break in: make something new fit&#xa;&#x9;for use I broke in my new hiking boots.&#xa;&#x9;breathe in: inhale We breathed in the fresh air.&#xa;&#x9;breathe out: exhale I breathed out a sigh of relief."/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="InstructionTwo">
                       <Properties>
@@ -684,18 +1386,110 @@
                         </Constraint>
                       </Constraints>
 
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="1620" max="32767" attributes="0"/>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="970" max="32767" attributes="0"/>
-                          </Group>
-                        </DimensionLayout>
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                        <Property name="useNullLayout" type="boolean" value="false"/>
                       </Layout>
+                      <SubComponents>
+                        <Component class="javax.swing.JButton" name="start_btn">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="24" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Start"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="start_btnActionPerformed"/>
+                          </Events>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="1240" y="160" width="128" height="-1"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="jButton4">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="24" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Submit"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="1400" y="160" width="128" height="40"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="100" y="380" width="1420" height="410"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTextArea" name="jTextArea4">
+                              <Properties>
+                                <Property name="columns" type="int" value="20"/>
+                                <Property name="rows" type="int" value="5"/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Component class="javax.swing.JLabel" name="jLabel25">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="24" style="0"/>
+                            </Property>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="1330" y="840" width="110" height="40"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel28">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="24" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Score :"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="1170" y="840" width="110" height="40"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel29">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="24" style="0"/>
+                            </Property>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="210" y="320" width="100" height="30"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel30">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="24" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Result :"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="100" y="320" width="100" height="30"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                      </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="TutorialThree">
                       <Constraints>
@@ -704,18 +1498,35 @@
                         </Constraint>
                       </Constraints>
 
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="1620" max="32767" attributes="0"/>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="970" max="32767" attributes="0"/>
-                          </Group>
-                        </DimensionLayout>
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                        <Property name="useNullLayout" type="boolean" value="false"/>
                       </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="40" y="30" width="1530" height="900"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTextArea" name="jTextArea5">
+                              <Properties>
+                                <Property name="columns" type="int" value="20"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Times New Roman" size="24" style="0"/>
+                                </Property>
+                                <Property name="rows" type="int" value="5"/>
+                                <Property name="text" type="java.lang.String" value=" tips on speaking English fluently and confidently&#xa;&#xa;&#xa;1. Don&#x2019;t be afraid to make mistakes&#xa;Your goal is to deliver a message, not speak perfect English,&#xa; with the right grammar and vocabulary. Even native English speakers make mistakes!&#xa;&#xa;2. Practise, practise, Practice&#xa;   Practice makes perfect.Constantly look for opportunities to test out your spoken English.  &#xa;   Busuu&apos;s Conversations feature, for instance, provides an easy way to speak English and get feedback from with native speakers around the world.&#xa;&#xa;3. Listen&#xa;   The more you hear, the easier it will be for you to speak better English. You&#x2019;ll start speaking more fluently and confidently in conversations, &#xa;   learning how to give your opinions in English with new expressions and idioms.&#xa;&#xa;4. Celebrate success&#xa;   Every time you talk to someone in English is an achievement.  &#xa;   Every single interaction you have, no matter how small, will help you improve your skills over time. Be proud of your progress. &#xa;   &#xa;   These first four tips help provide the best way to start speaking English with ease. &#xa;   The following three steps will help take your English speaking skills to the next level..&#xa;&#xa;5. Think in English&#xa;   Go from speaking good English to great English by thinking in the language.&#xa;   You&#x2019;ll find it difficult at first, &#xa;   but after some time you&#x2019;ll learn how to switch between speaking English and your first language."/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="InstructionThree">
                       <Properties>
